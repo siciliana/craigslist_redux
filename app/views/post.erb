@@ -1,0 +1,12 @@
+
+  <h1><%= @post.title %></h1><br>
+<ul>
+  <li><%= @post.text %><br></li>
+  <li><%= @post.location %><br></li>
+  <li><%= @post.price %><br></li>
+</ul>
+
+<a href="/update_post/<%= @post.id %>">Update your post!</a> <br> 
+
+<a href="/delete_post/<%= @post.id %>">Delete your post!</a> 
+

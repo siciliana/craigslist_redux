@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Create Post!</h1>
+
+  <form action="/create_post" method="POST"> 
+    <label>Choose your Category: <select name="post[category_id]">
+        <option value="1">Cars</option>
+        <option value="2">Apartments</option>
+        <option value="3">Other</option>
+      </select></label> <br>
+    <label>Title: <input type="text" name="post[title]"></label><br>
+    <label>Text: <input type="text" name="post[text]"></label><br>
+    <label>Location: <input type="text" name="post[location]"></label><br>
+    <label>Price: <input type="text" name="post[price]"></label><br>
+
+    <input type="submit" value="Submit Post!">
+  </form>
+</div>

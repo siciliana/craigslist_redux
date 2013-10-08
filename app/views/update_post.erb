@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Edit Your Post!</h1>
+
+  <form action="/update_post/<%= @post.id %>" method="POST"> 
+    <label>Choose your Category: <select name="post[category_id]">
+        <option value="1">Cars</option>
+        <option value="2">Apartments</option>
+        <option value="3">Other</option>
+      </select></label> <br>
+    <label>Title: <input type="text" name="post[title]" value="<%= @post.try(:title)%>"></label><br>
+    <label>Text: <input type="text" name="post[text]" value="<%= @post.try(:text)%>"></label><br>
+    <label>Location: <input type="text" name="post[location]" value="<%= @post.try(:location)%>"></label><br>
+    <label>Price: <input type="text" name="post[price]" value="<%= @post.try(:price)%>"></label><br>
+
+    <input type="submit" value="Submit Post!">
+
+
+</div>
